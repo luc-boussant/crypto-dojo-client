@@ -13,9 +13,7 @@ class Ranking extends React.Component {
   };
   componentDidMount = async () => {
     // TODO
-    const ranking = {
-      ranking: []
-    };
+    const ranking = [];
     this.setState({
       ranking
     });
