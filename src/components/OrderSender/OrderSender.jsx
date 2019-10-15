@@ -10,8 +10,10 @@ import { areValidOrders, sendOrders } from "helpers/helpers";
 class OrderSender extends React.Component {
   state = {
     orderFields: {
-      SMA: "",
-      ARI: ""
+      SMA:
+        '{"orders": [{"type": "BUY","amount": 1000.2,"timestamp": "2019-01-25T23:20:44"}]}',
+      ARI:
+        '{"orders": [{"type": "BUY","amount": 1000.2,"timestamp": "2019-01-25T23:20:44"}]}'
     }
   };
   handleChange = (event, coin) => {

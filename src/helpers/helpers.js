@@ -1,13 +1,18 @@
 import _ from "lodash";
 
-const baseUrl = "http://ec2-15-188-53-149.eu-west-3.compute.amazonaws.com";
+const baseUrl = "";
 
 /**
  * Call the /api/ranking route
  */
 export const getRankingData = async () => {
-  // TODO
-  return;
+  const response = await fetch(baseUrl + "/api/ranking");
+  const rawRanking = await response.json();
+  const ranking = rawRanking.players.map(r =>
+    _.values({ ...r, capital: `${r.capital}€` })
+  );
+
+  return ranking;
 };
 
 /**

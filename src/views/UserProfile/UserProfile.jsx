@@ -128,7 +128,7 @@ function UserProfile(props) {
                 </p>
                 <p>
                   Suivez les développements de cette folle journée avec le
-                  #RDBvsFSR
+                  #RDB2vsFSR2
                 </p>
               </div>
             </CardBody>
